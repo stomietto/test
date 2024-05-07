@@ -1,0 +1,43 @@
+#testimonios {
+    width: 100%;
+    padding: 6%;
+    position: relative;
+    background-color: #f5eec8;
+    overflow: scroll; 
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  #testimonios .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  #testimonios .carousel {
+    display: flex;
+    width: 110%;
+    position: relative;
+  }
+  
+  #testimonios img {
+    max-width: 300px;
+    height: auto;
+    padding: 2px;
+    margin-right: 11px;
+    margin-left: 3px;
+    transition: transform 0.1s ease-in-out;
+    border: 1px solid black;
+  }
+  
+  #testimonios .carousel img:hover {
+    transform: scale(1.2);
+  }
+  
+  
+  
+  
