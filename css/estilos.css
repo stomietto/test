@@ -1,4 +1,33 @@
-/*estilos.css*/
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#video-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+header {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+
+/*.........................................................................................*/
 /* Estilos generales */
 * {
   box-sizing: border-box;
@@ -109,20 +138,20 @@ img {
   background-color: #444;
 }
 
+
 #servicios {
   padding: 50px 0;
   background-color: #fff;
 }
 
-#servicios h2 {
-  margin-bottom: 30px;
-}
+
 
 #servicios ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0;
+  padding: 0;
 }
 
 #servicios li {
@@ -147,36 +176,9 @@ img {
   margin: 0;
 }
 
-#testimonios {
-  padding: 50px 0;
-  background-color: #f7f7f7;
-}
 
-#testimonios h2 {
-  margin-bottom: 30px;
-}
 
-#testimonios ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0;
-}
 
-#testimonios li {
-  width: 40%;
-  padding: 20px;
-  border: 1px solid #f7f7f7;
-  border-radius: 4px;
-  margin-bottom: 20px;
-}
-
-#testimonios li blockquote {
-  font-style: italic;
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
 
 /* Estilos del menú y logo */
 .menu ul {
@@ -228,177 +230,9 @@ img {
   color: #000;
 }
 
-/* Estilos de la página de contacto */
-#presupuesto {
-  padding: 70px 0;
-  background-image: url("../imagenes/Vizsla-min.jpeg");
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-#presupuesto p {
-  color: #f7f5f5;
-  text-align: left;
-  margin-left: 15cm;
-  font-size: 2em;
-  font-weight: 800;
-  text-shadow: 2px 2px 3px #141414fb;
-}
-
-#presupuesto h1 {
-  margin-bottom: 30px;
-  color: #eef1f7;
-  text-align: right;
-  font-size: 36px;
-  margin-right: 6cm;
-  text-shadow: 1px 1px 2px #f5f0f0;
-}
-
-#formulario {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 7px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  margin: 0 auto;
-  margin-right: 3cm;
-}
-
-#formulario label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #333;
-  display: block;
-}
-
-#formulario input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  font-size: 16px;
-}
-
-#formulario button {
-  background-color: #0f3969;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 18px;
-  transition: background-color 0.3s;
-  border: none;
-}
-
-#formulario button:hover {
-  background-color: #33b5e5;
-}
-
-#formulario .total {
-  margin-top: 20px;
-  border-top: 1px solid #ddd;
-  padding-top: 20px;
-}
-
-#formulario .total label {
-  font-weight: normal;
-  color: #333;
-  display: block;
-}
-
-#formulario .total input {
-  font-weight: bold;
-  border: none;
-  background-color: #f7f7f7;
-  font-size: 18px;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-#presupuesto .imagen-mascota {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-mascota img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-}
-
-#presupuesto .descripcion {
-  margin-bottom: 20px;
-  text-align: justify;
-}
-
-#presupuesto .descripcion p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-}
-
-#presupuesto .ventajas {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-}
-
-#presupuesto .ventajas li {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#presupuesto .ventajas li i {
-  font-size: 20px;
-  color: #007bff;
-  margin-right: 10px;
-}
-
-#presupuesto .ventajas li p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-}
-
-#presupuesto .boton-reserva {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 18px;
-  display: inline-block;
-  transition: background-color 0.3s;
-  border: none;
-}
-
-#presupuesto .boton-reserva:hover {
-  background-color: #33b5e5;
-}
-
-@media (max-width: 768px) {
-
-  #presupuesto .imagen-mascota,
-  #formulario {
-    float: none;
-    width: 100%;
-  }
-}
-
  /* Estilos de la galeria de imagenes */
  .galeria {
   text-align: center;
-
  }
 
   .grid {
@@ -410,15 +244,14 @@ mascota img {
     margin-top: 30px;
     padding: 20px;
     gap: 10px;
-
   }
   
    /* Estilos de la flip card */
-  .flip-card {
+   .flip-card {
     border-style: hidden;
     background-color: transparent;
-    width: 220px;
-    height: 220px;
+    width: 350px;
+    height: 350px;
     perspective: 1000px;
   }
   
@@ -443,7 +276,6 @@ mascota img {
   transform: rotateY(180deg);
 }
 
-  
   .flip-card-front,
   .flip-card-back {
     position: absolute;
@@ -471,54 +303,6 @@ mascota img {
     align-items: center;
   }
 
-/* Estilos de la página de galería
-#carrete-perros {
-  padding: 50px 0;
-  background-color: #f7f7f7;
-}
-
-.contenedor-fotos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.foto {
-  width: 250px;
-  height: 350px;
-  position: relative;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.foto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.foto:hover {
-  transform: scale(1.05);
-}
-
-.foto .nombre {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  visibility: hidden;
-  font-family: "Comic Sans MS", cursive;
-  font-size: 24px;
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-} */
-
 /* Estilos de la página de servicios */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -543,12 +327,6 @@ header {
 .logo img {
   height: 60px;
   width: 60px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .menu ul {
@@ -582,10 +360,7 @@ main {
   margin-bottom: 50px;
 }
 
-.servicios h2 {
-  margin-bottom: 30px;
-  font-family: 'Tahoma', Geneva, Verdana, sans-serif;
-}
+
 
 .servicios ul {
   list-style: none;
@@ -652,32 +427,33 @@ main {
   font-size: 16px;
 }
 
+
 /* Estilos para el contenedor del video */
 #video-container {
-  width: 350px; /* Ancho fijo del contenedor */
-  height: 350px; /* La altura se ajustará automáticamente según el contenido (en este caso, el video) */
+  width: 350px; /* Ancho de 450px */
+  height: 500px; /* Altura ajustada automáticamente según el contenido */
   position: fixed; /* Hace que el contenedor sea fijo en la pantalla */
   top: 50%; /* Ubica el contenedor en la mitad superior de la ventana */
-  right: 1cm; /* Margen derecho de 1 centímetro */
+  right: 1cm; /* Separación de 1cm desde el margen derecho */
   transform: translateY(-50%); /* Centra verticalmente el contenedor */
   z-index: 999; /* Asegura que el contenedor esté por encima de otros elementos */
-  margin-bottom: 20px; /* Margen inferior para dejar espacio debajo del video */
+  display: flex; /* Usa flexbox para centrar el video */
+  justify-content: center; /* Centra horizontalmente el video dentro del contenedor */
+  align-items: center; /* Centra verticalmente el video dentro del contenedor */
+  background-color: #3614016c; /* Color de fondo con 50% de opacidad */
 }
 
-/* Estilos para el video */
-#video {
-  width: 100%;
-  height: auto;
-  object-fit: cover; /* Escala el video para llenar el contenedor */
-}
 
-/* Fin */
+
+
+
+/* Estilos About */
 
 /* Estilos para la sección */
 #sobre-nosotros {
   width: 60%;
   margin-right: 60%;
-  margin-left: 1cm;
+  margin-left: 0.5cm;
   padding: 20px;
   box-sizing: border-box;
   background-color: #f8f8f8;
@@ -706,7 +482,8 @@ main {
 /* Estilos para los párrafos */
 #sobre-nosotros p {
   line-height: 1.8;
-  /* Espacio entre líneas aumentado */
+
+/* Espacio entre líneas aumentado */
   margin-bottom: 20px;
   color: #555;
 }
@@ -753,11 +530,11 @@ main {
 }
 
 .grid-item {
-  height: 370px;
-  padding: 20px;
-  background-color: #f8f8f8;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ height: 370px;
+ padding: 20px;
+ background-color: #f8f8f8;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .grid-item>h3 {
@@ -775,6 +552,15 @@ main {
 .grid-item>p {
   line-height: 1.8;
   color: #555;
+}
+
+.header-servicios {
+  background-image: url("https://steemitimages.com/DQmTavXuDc679Fdu1BxRFRW998uGfi4sNnc3BUqNQp2wxe6/perros-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  text-align: right;
+  background-size: cover;
 }
 
 /* Media queries para diferentes tamaños de pantalla */
@@ -811,14 +597,31 @@ main {
     display: none;
     /* Oculta el contenedor del video */
   }
+  #servicios ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    padding: 20px;
+    align-items: center;
+  }
+  #servicios li {
+    width: auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .header-servicios {
+    background-image: url(https://static8.depositphotos.com/1009420/885/i/450/depositphotos_8853147-stock-photo-group-of-five-dogs.jpg);
+    margin: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    text-align: right;
+    background-size: cover;
+  }
 }
 
-.header-servicios {
-  background-image: url("https://steemitimages.com/DQmTavXuDc679Fdu1BxRFRW998uGfi4sNnc3BUqNQp2wxe6/perros-banner.jpg");
-  margin: 0px 40px;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 400px;
-  text-align: right;
-  background-size: fill;
-}
+
